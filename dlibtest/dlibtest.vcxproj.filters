@@ -252,7 +252,7 @@
     <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\zutil.c">
       <Filter>librrary\zlib</Filter>
     </ClCompile>
-    <ClCompile Include="mainn.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

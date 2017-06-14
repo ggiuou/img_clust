@@ -220,7 +220,7 @@
     <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\trees.c" />
     <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\uncompr.c" />
     <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\zutil.c" />
-    <ClCompile Include="mainn.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jchuff.h" />
