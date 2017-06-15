@@ -67,6 +67,7 @@ std::vector<matrix<rgb_pixel>> jitter_image(
 
 bool ListFiles(wstring path, wstring mask, std::vector<wstring>& files);
 
+bool is_file_exist(const char *fileName);
 // ----------------------------------------------------------------------------------------
 struct info
 {
@@ -134,8 +135,24 @@ int main(int argc, char** argv) try
 		cout << "No faces found in image!" << endl;
 		return 1;
 	}
-	std::vector<matrix<float, 0, 1>> face_descriptors = net(faces);
+	std::vector<matrix<float, 0, 1>> face_descriptors;
+	std::vector<matrix<float, 0, 1>> tmp = net(faces);
 
+	//Check descriptors file for raeding and writing
+	string path_des = path + "des.dat";
+	size_t begin = 0;
+	if (is_file_exist(path_des.c_str()))
+	{
+		deserialize(path_des) >> face_descriptors;
+		begin = face_descriptors.size();
+		face_descriptors.insert(face_descriptors.end(), tmp.begin(), tmp.end());
+	}
+	else
+		face_descriptors = tmp;
+
+	serialize(path_des) << face_descriptors;
+
+	//Prepare data for graphing
 	std::vector<sample_pair> edges;
 	for (size_t i = 0; i < face_descriptors.size(); ++i)
 	{
@@ -145,11 +162,14 @@ int main(int argc, char** argv) try
 				edges.push_back(sample_pair(i, j));
 		}
 	}
+
+	//Clustering
 	std::vector<unsigned long> labels;
 	const auto num_clusters = chinese_whispers(edges, labels);
 	cout << "number of people found in the image: " << num_clusters << endl;
 
 	//std::vector<image_window> win_clusters(num_clusters);
+	//Check label and group them
 	array2d<rgb_pixel> img2d;
 	for (size_t cluster_id = 0; cluster_id < num_clusters; ++cluster_id)
 	{
@@ -157,13 +177,13 @@ int main(int argc, char** argv) try
 		string path_save(path + cast_to_string(cluster_id));
 		mkdir(path_save.c_str());
 
-		for (size_t j = 0; j < labels.size(); ++j)
+		for (size_t j = begin ; j < labels.size(); ++j)
 		{
 			if (cluster_id == labels[j])
 			{
-				temp.push_back(faces[j]);
+				temp.push_back(faces[j - begin]);
 				assign_image(img2d, temp.back());
-				save_jpeg(img2d, path_save + "/" + face_names[j] + cast_to_string(j) + ".jpg");
+				save_jpeg(img2d, path_save + "/" + face_names[j - begin] + cast_to_string(j) + ".jpg");
 			}
 
 		}
@@ -175,8 +195,8 @@ int main(int argc, char** argv) try
 
 	
 
-	/*cout << "face descriptor for one face: " << trans(face_descriptors[0]) << endl;
-
+	cout << "face descriptor for one face: " << trans(face_descriptors[0]) << endl;
+	/*
 	matrix<float, 0, 1> face_descriptor = mean(mat(net(jitter_image(faces[0]))));
 	cout << "jittered face descriptor for one face: " << trans(face_descriptor) << endl;*/
 
@@ -257,4 +277,10 @@ bool ListFiles(wstring path, wstring mask, std::vector<wstring>& files) {
 	}
 
 	return true;
+}
+
+bool is_file_exist(const char *fileName)
+{
+	std::ifstream infile(fileName);
+	return infile.good();
 }
