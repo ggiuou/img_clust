@@ -165,7 +165,7 @@ int main(int argc, char** argv) try
 
 	//Clustering
 	std::vector<unsigned long> labels;
-	const auto num_clusters = chinese_whispers(edges, labels);
+	const auto num_clusters = chinese_whispers(edges, labels, 200);
 	cout << "number of people found in the image: " << num_clusters << endl;
 
 	//std::vector<image_window> win_clusters(num_clusters);
@@ -183,7 +183,7 @@ int main(int argc, char** argv) try
 			{
 				temp.push_back(faces[j - begin]);
 				assign_image(img2d, temp.back());
-				save_jpeg(img2d, path_save + "/" + face_names[j - begin] + cast_to_string(j) + ".jpg");
+				save_jpeg(img2d, path_save + "/" + face_names[j - begin] + "_" + cast_to_string(j) + ".jpg");
 			}
 
 		}

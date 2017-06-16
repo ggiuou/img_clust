@@ -27,335 +27,335 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\all\source.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jcapimin.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jcapistd.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jccoefct.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jccolor.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jcdctmgr.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jchuff.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jcinit.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jcmainct.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jcmarker.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jcmaster.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jcomapi.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jcparam.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jcphuff.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jcprepct.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jcsample.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jdapimin.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jdapistd.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jdatadst.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jdatasrc.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jdcoefct.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jdcolor.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jddctmgr.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jdhuff.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jdinput.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jdmainct.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jdmarker.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jdmaster.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jdmerge.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jdphuff.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jdpostct.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jdsample.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jerror.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jfdctflt.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jfdctfst.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jfdctint.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jidctflt.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jidctfst.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jidctint.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jidctred.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jmemmgr.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jmemnobs.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jquant1.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jquant2.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jutils.cpp">
-      <Filter>librrary\jpeg</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\png.c">
-      <Filter>librrary\png</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\pngerror.c">
-      <Filter>librrary\png</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\pngget.c">
-      <Filter>librrary\png</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\pngmem.c">
-      <Filter>librrary\png</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\pngpread.c">
-      <Filter>librrary\png</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\pngread.c">
-      <Filter>librrary\png</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\pngrio.c">
-      <Filter>librrary\png</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\pngrtran.c">
-      <Filter>librrary\png</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\pngrutil.c">
-      <Filter>librrary\png</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\pngset.c">
-      <Filter>librrary\png</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\pngtrans.c">
-      <Filter>librrary\png</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\pngwio.c">
-      <Filter>librrary\png</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\pngwrite.c">
-      <Filter>librrary\png</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\pngwtran.c">
-      <Filter>librrary\png</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\pngwutil.c">
-      <Filter>librrary\png</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\adler32.c">
-      <Filter>librrary\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\compress.c">
-      <Filter>librrary\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\crc32.c">
-      <Filter>librrary\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\deflate.c">
-      <Filter>librrary\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\gzclose.c">
-      <Filter>librrary\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\gzlib.c">
-      <Filter>librrary\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\gzread.c">
-      <Filter>librrary\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\gzwrite.c">
-      <Filter>librrary\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\infback.c">
-      <Filter>librrary\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\inffast.c">
-      <Filter>librrary\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\inflate.c">
-      <Filter>librrary\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\inftrees.c">
-      <Filter>librrary\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\trees.c">
-      <Filter>librrary\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\uncompr.c">
-      <Filter>librrary\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\zutil.c">
-      <Filter>librrary\zlib</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\dlib\all\source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jcapimin.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jcapistd.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jccoefct.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jccolor.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jcdctmgr.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jchuff.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jcinit.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jcmainct.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jcmarker.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jcmaster.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jcomapi.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jcparam.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jcphuff.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jcprepct.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jcsample.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jdapimin.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jdapistd.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jdatadst.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jdatasrc.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jdcoefct.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jdcolor.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jddctmgr.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jdhuff.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jdinput.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jdmainct.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jdmarker.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jdmaster.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jdmerge.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jdphuff.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jdpostct.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jdsample.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jerror.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jfdctflt.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jfdctfst.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jfdctint.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jidctflt.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jidctfst.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jidctint.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jidctred.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jmemmgr.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jmemnobs.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jquant1.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jquant2.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libjpeg\jutils.cpp">
+      <Filter>librrary\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libpng\png.c">
+      <Filter>librrary\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libpng\pngerror.c">
+      <Filter>librrary\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libpng\pngget.c">
+      <Filter>librrary\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libpng\pngmem.c">
+      <Filter>librrary\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libpng\pngpread.c">
+      <Filter>librrary\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libpng\pngread.c">
+      <Filter>librrary\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libpng\pngrio.c">
+      <Filter>librrary\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libpng\pngrtran.c">
+      <Filter>librrary\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libpng\pngrutil.c">
+      <Filter>librrary\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libpng\pngset.c">
+      <Filter>librrary\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libpng\pngtrans.c">
+      <Filter>librrary\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libpng\pngwio.c">
+      <Filter>librrary\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libpng\pngwrite.c">
+      <Filter>librrary\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libpng\pngwtran.c">
+      <Filter>librrary\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\libpng\pngwutil.c">
+      <Filter>librrary\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\zlib\adler32.c">
+      <Filter>librrary\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\zlib\compress.c">
+      <Filter>librrary\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\zlib\crc32.c">
+      <Filter>librrary\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\zlib\deflate.c">
+      <Filter>librrary\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\zlib\gzclose.c">
+      <Filter>librrary\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\zlib\gzlib.c">
+      <Filter>librrary\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\zlib\gzread.c">
+      <Filter>librrary\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\zlib\gzwrite.c">
+      <Filter>librrary\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\zlib\infback.c">
+      <Filter>librrary\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\zlib\inffast.c">
+      <Filter>librrary\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\zlib\inflate.c">
+      <Filter>librrary\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\zlib\inftrees.c">
+      <Filter>librrary\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\zlib\trees.c">
+      <Filter>librrary\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\zlib\uncompr.c">
+      <Filter>librrary\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dlib\external\zlib\zutil.c">
+      <Filter>librrary\zlib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jchuff.h">
+    <ClInclude Include="..\dlib\external\libjpeg\jchuff.h">
       <Filter>librrary\jpeg</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jconfig.h">
+    <ClInclude Include="..\dlib\external\libjpeg\jconfig.h">
       <Filter>librrary\jpeg</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jdct.h">
+    <ClInclude Include="..\dlib\external\libjpeg\jdct.h">
       <Filter>librrary\jpeg</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jdhuff.h">
+    <ClInclude Include="..\dlib\external\libjpeg\jdhuff.h">
       <Filter>librrary\jpeg</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jerror.h">
+    <ClInclude Include="..\dlib\external\libjpeg\jerror.h">
       <Filter>librrary\jpeg</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jinclude.h">
+    <ClInclude Include="..\dlib\external\libjpeg\jinclude.h">
       <Filter>librrary\jpeg</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jmemsys.h">
+    <ClInclude Include="..\dlib\external\libjpeg\jmemsys.h">
       <Filter>librrary\jpeg</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jmorecfg.h">
+    <ClInclude Include="..\dlib\external\libjpeg\jmorecfg.h">
       <Filter>librrary\jpeg</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jpegint.h">
+    <ClInclude Include="..\dlib\external\libjpeg\jpegint.h">
       <Filter>librrary\jpeg</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jpeglib.h">
+    <ClInclude Include="..\dlib\external\libjpeg\jpeglib.h">
       <Filter>librrary\jpeg</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\jversion.h">
+    <ClInclude Include="..\dlib\external\libjpeg\jversion.h">
       <Filter>librrary\jpeg</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\png.h">
+    <ClInclude Include="..\dlib\external\libpng\png.h">
       <Filter>librrary\png</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\pngconf.h">
+    <ClInclude Include="..\dlib\external\libpng\pngconf.h">
       <Filter>librrary\png</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\pngdebug.h">
+    <ClInclude Include="..\dlib\external\libpng\pngdebug.h">
       <Filter>librrary\png</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\pnginfo.h">
+    <ClInclude Include="..\dlib\external\libpng\pnginfo.h">
       <Filter>librrary\png</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\pnglibconf.h">
+    <ClInclude Include="..\dlib\external\libpng\pnglibconf.h">
       <Filter>librrary\png</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\pngpriv.h">
+    <ClInclude Include="..\dlib\external\libpng\pngpriv.h">
       <Filter>librrary\png</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\pngstruct.h">
+    <ClInclude Include="..\dlib\external\libpng\pngstruct.h">
       <Filter>librrary\png</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\crc32.h">
+    <ClInclude Include="..\dlib\external\zlib\crc32.h">
       <Filter>librrary\zlib</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\deflate.h">
+    <ClInclude Include="..\dlib\external\zlib\deflate.h">
       <Filter>librrary\zlib</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\gzguts.h">
+    <ClInclude Include="..\dlib\external\zlib\gzguts.h">
       <Filter>librrary\zlib</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\inffast.h">
+    <ClInclude Include="..\dlib\external\zlib\inffast.h">
       <Filter>librrary\zlib</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\inffixed.h">
+    <ClInclude Include="..\dlib\external\zlib\inffixed.h">
       <Filter>librrary\zlib</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\inflate.h">
+    <ClInclude Include="..\dlib\external\zlib\inflate.h">
       <Filter>librrary\zlib</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\inftrees.h">
+    <ClInclude Include="..\dlib\external\zlib\inftrees.h">
       <Filter>librrary\zlib</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\trees.h">
+    <ClInclude Include="..\dlib\external\zlib\trees.h">
       <Filter>librrary\zlib</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\zconf.h">
+    <ClInclude Include="..\dlib\external\zlib\zconf.h">
       <Filter>librrary\zlib</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\zlib.h">
+    <ClInclude Include="..\dlib\external\zlib\zlib.h">
       <Filter>librrary\zlib</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\zutil.h">
+    <ClInclude Include="..\dlib\external\zlib\zutil.h">
       <Filter>librrary\zlib</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libjpeg\README">
+    <None Include="..\dlib\external\libjpeg\README">
       <Filter>librrary\jpeg</Filter>
     </None>
-    <None Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\LICENSE">
+    <None Include="..\dlib\external\libpng\LICENSE">
       <Filter>librrary\png</Filter>
     </None>
-    <None Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\libpng\README">
+    <None Include="..\dlib\external\libpng\README">
       <Filter>librrary\png</Filter>
     </None>
-    <None Include="..\..\..\..\..\Downloads\dlib-19.4\dlib\external\zlib\README">
+    <None Include="..\dlib\external\zlib\README">
       <Filter>librrary\zlib</Filter>
     </None>
   </ItemGroup>
