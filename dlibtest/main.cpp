@@ -20,17 +20,6 @@ using namespace std;
 
 // ----------------------------------------------------------------------------------------
 
-// The next bit of code defines a ResNet network.  It's basically copied
-// and pasted from the dnn_imagenet_ex.cpp example, except we replaced the loss
-// layer with loss_metric and made the network somewhat smaller.  Go read the introductory
-// dlib DNN examples to learn what all this stuff means.
-//
-// Also, the dnn_metric_learning_on_images_ex.cpp example shows how to train this network.
-// The dlib_face_recognition_resnet_model_v1 model used by this example was trained using
-// essentially the code shown in dnn_metric_learning_on_images_ex.cpp except the
-// mini-batches were made larger (35x15 instead of 5x5), the iterations without progress
-// was set to 10000, the jittering you can see below in jitter_image() was used during
-// training, and the training dataset consisted of about 3 million images instead of 55.
 template <template <int, template<typename>class, int, typename> class block, int N, template<typename>class BN, typename SUBNET>
 using residual = add_prev1<block<N, BN, 1, tag1<SUBNET>>>;
 
@@ -61,13 +50,10 @@ using anet_type = loss_metric<fc_no_bias<128, avg_pool_everything<
 
 // ----------------------------------------------------------------------------------------
 
-std::vector<matrix<rgb_pixel>> jitter_image(
-	const matrix<rgb_pixel>& img
-);
-
 bool ListFiles(wstring path, wstring mask, std::vector<wstring>& files);
 
 bool is_file_exist(const char *fileName);
+
 // ----------------------------------------------------------------------------------------
 struct info
 {
@@ -99,7 +85,7 @@ int main(int argc, char** argv) try
 
 	std::vector<matrix<rgb_pixel>> faces;
 	std::vector<string> face_names;
-	//std::vector<image_window> win_detect(10);
+	
 	int count = 0;
 	if (ListFiles(path_source, L"*", files))
 	{
@@ -111,11 +97,9 @@ int main(int argc, char** argv) try
 
 			cout << "Load : " << path_file_img << endl;
 
-			string fName(path_file_img);
+			/*string fName(path_file_img);
 			fName = fName.substr(0, fName.find_last_of("\\/"));
-			fName = fName.substr(fName.find_last_of("\\/"));
-			/*win_detect[count].set_title("face cluster " + cast_to_string(count));
-			win_detect[count].set_image(img);*/
+			fName = fName.substr(fName.find_last_of("\\/"));*/
 
 			for (auto face : detector(img))
 			{
@@ -123,8 +107,7 @@ int main(int argc, char** argv) try
 				matrix<rgb_pixel> face_chip;
 				extract_image_chip(img, get_face_chip_details(shape, 150, 0.25), face_chip);
 				faces.push_back(move(face_chip));
-				face_names.push_back(fName);
-				//win_detect[count].add_overlay(face);
+				//face_names.push_back(fName);
 			}
 			count++;
 		}
@@ -135,8 +118,8 @@ int main(int argc, char** argv) try
 		cout << "No faces found in image!" << endl;
 		return 1;
 	}
-	std::vector<matrix<float, 0, 1>> face_descriptors;
-	std::vector<matrix<float, 0, 1>> tmp = net(faces);
+	std::vector<matrix<float, 0, 1>> face_descriptors = net(faces);
+	/*std::vector<matrix<float, 0, 1>> tmp = net(faces);
 
 	//Check descriptors file for raeding and writing
 	string path_des = path + "des.dat";
@@ -150,7 +133,7 @@ int main(int argc, char** argv) try
 	else
 		face_descriptors = tmp;
 
-	serialize(path_des) << face_descriptors;
+	serialize(path_des) << face_descriptors;*/
 
 	//Prepare data for graphing
 	std::vector<sample_pair> edges;
@@ -168,40 +151,67 @@ int main(int argc, char** argv) try
 	const auto num_clusters = chinese_whispers(edges, labels, 200);
 	cout << "number of people found in the image: " << num_clusters << endl;
 
-	//std::vector<image_window> win_clusters(num_clusters);
 	//Check label and group them
 	array2d<rgb_pixel> img2d;
+	std::vector<int> number_sf;
 	for (size_t cluster_id = 0; cluster_id < num_clusters; ++cluster_id)
 	{
-		std::vector<matrix<rgb_pixel>> temp;
+		/*std::vector<matrix<rgb_pixel>> temp;
 		string path_save(path + cast_to_string(cluster_id));
-		mkdir(path_save.c_str());
+		mkdir(path_save.c_str());*/
 
-		for (size_t j = begin ; j < labels.size(); ++j)
+		number_sf.push_back(0);
+
+		for (size_t j = 0 ; j < labels.size(); ++j)
 		{
 			if (cluster_id == labels[j])
 			{
-				temp.push_back(faces[j - begin]);
+				number_sf[cluster_id]++;
+				/*temp.push_back(faces[j - begin]);
 				assign_image(img2d, temp.back());
-				save_jpeg(img2d, path_save + "/" + face_names[j - begin] + "_" + cast_to_string(j) + ".jpg");
+				save_jpeg(img2d, path_save + "/" + face_names[j - begin] + "_" + cast_to_string(j) + ".jpg");*/
 			}
 
 		}
-		/*win_clusters[cluster_id].set_title("face cluster " + cast_to_string(cluster_id));
-		win_clusters[cluster_id].set_image(tile_images(temp));*/
 	}
 
+	//Clean data and save description
+	int index, max;
+
+	for (int i = 0; i < num_clusters; i++)
+	{
+		if (number_sf[i] > max)
+		{
+			max = number_sf[i];
+			index = i;
+		}
+	}
+
+	std::vector<matrix<rgb_pixel>> temp;
+	std::vector<matrix<float, 0, 1>> face_each_descriptors;
+
+	string fName(argv[1]);
+	fName = fName.substr(fName.find_last_of("\\/"));
+	string path_save(path + "description/");
+	if (!is_file_exist(path_save.c_str()))
+		mkdir(path_save.c_str());
+
+	for (int i = 0; i < labels.size(); i++)
+	{
+		if (labels[i] == index)
+		{
+			face_each_descriptors.push_back(face_descriptors[i]);
+			/*temp.push_back(faces[i]);
+			assign_image(img2d, temp.back());
+			save_jpeg(img2d, path_save + "_" + cast_to_string(i) + ".jpg");*/
+		}
+	}
+	
+	//Save description file	
+	serialize(path_save + fName + ".dat") << face_each_descriptors;
+	
 	cout << "success" << endl;
 
-	
-
-	cout << "face descriptor for one face: " << trans(face_descriptors[0]) << endl;
-	/*
-	matrix<float, 0, 1> face_descriptor = mean(mat(net(jitter_image(faces[0]))));
-	cout << "jittered face descriptor for one face: " << trans(face_descriptor) << endl;*/
-
-	cout << "hit enter to terminate" << endl;
-	cin.get();
 }
 catch (std::exception& e)
 {
@@ -209,32 +219,6 @@ catch (std::exception& e)
 }
 
 // ----------------------------------------------------------------------------------------
-
-std::vector<matrix<rgb_pixel>> jitter_image(
-	const matrix<rgb_pixel>& img
-)
-{
-	thread_local random_cropper cropper;
-	cropper.set_chip_dims(150, 150);
-	cropper.set_randomly_flip(true);
-	cropper.set_max_object_height(0.99999);
-	cropper.set_background_crops_fraction(0);
-	cropper.set_min_object_height(0.97);
-	cropper.set_translate_amount(0.02);
-	cropper.set_max_rotation_degrees(3);
-
-	std::vector<mmod_rect> raw_boxes(1), ignored_crop_boxes;
-	raw_boxes[0] = shrink_rect(get_rect(img), 3);
-	std::vector<matrix<rgb_pixel>> crops;
-
-	matrix<rgb_pixel> temp;
-	for (int i = 0; i < 100; ++i)
-	{
-		cropper(img, raw_boxes, temp, ignored_crop_boxes);
-		crops.push_back(move(temp));
-	}
-	return crops;
-}
 
 bool ListFiles(wstring path, wstring mask, std::vector<wstring>& files) {
 	HANDLE hFind = INVALID_HANDLE_VALUE;
